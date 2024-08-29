@@ -18,7 +18,9 @@ export class ChampionService {
       domainExpansion: 'Unnamed',
       grade: 'Unknow',
       mangaDebut: '1',
-      animeDebut: '1' 
+      animeDebut: '1' ,
+      photo: '../assets/images/yuuji.png'
+      
 },
 {
       name: 'Satoru Gojo',
@@ -31,7 +33,8 @@ export class ChampionService {
       domainExpansion: 'Unlimited Void',
       grade: 'Special',
       mangaDebut: '1',
-      animeDebut: '1' 
+      animeDebut: '1',
+      photo: '../assets/images/gojo.png'
 },
 {
       name: 'Ryomen Sukuna',
@@ -44,7 +47,8 @@ export class ChampionService {
       domainExpansion: 'Malevolent Shrine',
       grade: 'Special',
       mangaDebut: '1',
-      animeDebut: '1' 
+      animeDebut: '1',
+      photo: '../assets/images/sukuna.png'
 },
 {
       name: 'Megumi Fushiguro',
@@ -57,7 +61,8 @@ export class ChampionService {
       domainExpansion: 'Chimera Shadow Garden',
       grade: '2',
       mangaDebut: '1',
-      animeDebut: '1' 
+      animeDebut: '1',
+      photo: '../assets/images/megumi.jpg'
 },
 {
       name: 'Yuta Okkotsu',
@@ -70,7 +75,8 @@ export class ChampionService {
       domainExpansion: 'Authentic Mutual Love',
       grade: 'Special',
       mangaDebut: '137',
-      animeDebut: '47' 
+      animeDebut: '47',
+      photo: '../assets/images/yuta.jpg'
 },
 {
       name: 'Nobara Kugisaki',
@@ -83,7 +89,8 @@ export class ChampionService {
       domainExpansion: 'None',
       grade: '3',
       mangaDebut: '3',
-      animeDebut: '2' 
+      animeDebut: '2',
+      photo: '../assets/images/nobara.png'
 },
 {
       name: 'Masamichi Yaga',
@@ -96,7 +103,8 @@ export class ChampionService {
       domainExpansion: 'None',
       grade: '1',
       mangaDebut: '3',
-      animeDebut: '2' 
+      animeDebut: '2',
+      photo: '../assets/images/yaga.png'
 },
 {
       name: 'Atsuya Kusakabe',
@@ -109,7 +117,8 @@ export class ChampionService {
       domainExpansion: 'None',
       grade: '1',
       mangaDebut: '83',
-      animeDebut: '31' 
+      animeDebut: '31',
+      photo: '../assets/images/kusakabe.png'
 },
 {
       name: 'Kiyotaka Ijichi',
@@ -122,7 +131,8 @@ export class ChampionService {
       domainExpansion: 'None',
       grade: 'Unknow',
       mangaDebut: '2',
-      animeDebut: '4' 
+      animeDebut: '4',
+      photo: '../assets/images/ijichi.png'
 },
 {
       name: 'Shoko Ieiri',
@@ -135,7 +145,8 @@ export class ChampionService {
       domainExpansion: 'None',
       grade: 'Unknow',
       mangaDebut: '10',
-      animeDebut: '5' 
+      animeDebut: '5',
+      photo: '../assets/images/ieiri.png'
 },
 {
       name: 'Akari Nitta',
@@ -148,7 +159,8 @@ export class ChampionService {
       domainExpansion: 'None',
       grade: 'Unknow',
       mangaDebut: '55',
-      animeDebut: '22' 
+      animeDebut: '22',
+      photo: '../assets/images/nitta.jpeg'
 },
 {
       name: 'Maki Zenin',
@@ -161,7 +173,8 @@ export class ChampionService {
       domainExpansion: 'None',
       grade: '4',
       mangaDebut: '10',
-      animeDebut: '5' 
+      animeDebut: '5',
+      photo: '../assets/images/maki.jpg'
 },
 {
       name: 'Toge Inumaki',
@@ -174,7 +187,8 @@ export class ChampionService {
       domainExpansion: 'None',
       grade: 'Semi 1',
       mangaDebut: '1',
-      animeDebut: '10' 
+      animeDebut: '10',
+      photo: '../assets/images/toge.jpg'
 },
 {
       name: 'Panda',
@@ -187,7 +201,8 @@ export class ChampionService {
       domainExpansion: 'None',
       grade: 'Semi 2',
       mangaDebut: '1',
-      animeDebut: '10' 
+      animeDebut: '10',
+      photo: '../assets/images/panda.jpg'
 },
 {
       name: 'Kinji Hakari',
@@ -200,7 +215,8 @@ export class ChampionService {
       domainExpansion: 'Idle Death Gamble',
       grade: 'Unknow',
       mangaDebut: '153',
-      animeDebut: 'N/A' 
+      animeDebut: 'N/A',
+      photo: '../assets/images/hakari.jpg'
 },
 {
       name: 'Kirara Hoshi',
@@ -213,7 +229,8 @@ export class ChampionService {
       domainExpansion: 'None',
       grade: 'Unknow',
       mangaDebut: '153',
-      animeDebut: 'N/A' 
+      animeDebut: 'N/A',
+      photo: '../assets/images/kirara.png'
 },
 {
       name: 'Mahito',
@@ -226,7 +243,8 @@ export class ChampionService {
       domainExpansion: 'Self-Embodiment of Perfection',
       grade: 'Special',
       mangaDebut: '16',
-      animeDebut: '7' 
+      animeDebut: '7',
+      photo: '../assets/images/mahito.jpg'
 },
 {
       name: 'Jogo',
@@ -239,7 +257,8 @@ export class ChampionService {
       domainExpansion: 'Coffin of the Iron Mountain',
       grade: 'Special',
       mangaDebut: '10',
-      animeDebut: '5' 
+      animeDebut: '5',
+      photo: '../assets/images/jogo.png'
 },
 {
       name: 'Hanami',
@@ -252,7 +271,8 @@ export class ChampionService {
       domainExpansion: 'Shining Sea of Growing Branches',
       grade: 'Special',
       mangaDebut: '10',
-      animeDebut: '5' 
+      animeDebut: '5',
+      photo: '../assets/images/hanami.jpg'
 },
 {
       name: 'Dagon',
@@ -265,7 +285,8 @@ export class ChampionService {
       domainExpansion: 'Horizon of the Captivating Skandha',
       grade: 'Special',
       mangaDebut: '10',
-      animeDebut: '5' 
+      animeDebut: '5',
+      photo: '../assets/images/dagon.png'
 },
 {
       name: 'Rika Orimoto',
@@ -278,7 +299,8 @@ export class ChampionService {
       domainExpansion: 'None',
       grade: 'Special',
       mangaDebut: '??',
-      animeDebut: '??' 
+      animeDebut: '??',
+      photo: '../assets/images/rika.jpg'
 }
   ];
 

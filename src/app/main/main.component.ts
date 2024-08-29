@@ -13,10 +13,9 @@ export class MainComponent implements OnInit {
   guessedCharacters: any[] = [];
   message: string = '';
   validChampions: string[] = [];
-  searchResults: string[] = [];
+  searchResults: any[] = [];  // Altere para um array de objetos contendo nome e foto
 
   constructor(private championService: ChampionService) { }
-
 
   ngOnInit(): void {
     this.loadRandomChampion();
@@ -36,8 +35,14 @@ export class MainComponent implements OnInit {
     if (this.guess.length > 0) {
       const lowercaseGuess = this.guess.toLowerCase();
       this.searchResults = this.championService.getChampions()
-        .map(champion => champion.name)
-        .filter(name => name.toLowerCase().includes(lowercaseGuess));
+        .filter(champion => 
+          champion.name.toLowerCase().includes(lowercaseGuess) && 
+          !this.guessedCharacters.some(champ => champ.name.toLowerCase() === champion.name.toLowerCase())
+        )
+        .map(champion => ({
+          name: champion.name,
+          photo: champion.photo // Supondo que `photo` é a URL da imagem
+        }));
     } else {
       this.searchResults = [];
     }
@@ -50,7 +55,7 @@ export class MainComponent implements OnInit {
 
   checkGuess() {
     if (!this.validChampions.includes(this.guess.toLowerCase())) {
-      this.message = 'Personagem inválido! Por favor, tente novamente.';
+      this.message = 'Invalid character! Please try again.';
       return;
     }
     this.guessedChampion = this.championService.getChampion(this.guess);
@@ -59,9 +64,9 @@ export class MainComponent implements OnInit {
       this.guessedCharacters.push(this.guessedChampion);
     }
     if (this.guess.toLowerCase() === this.currentChampion.name.toLowerCase()) {
-      this.message = 'Você acertou!';
+      this.message = 'You guessed it!';
     } else {
-      this.message = 'Tente novamente!';
+      this.message = 'Try again!';
     }
     this.guess = ''; // Limpar o campo de entrada após cada adivinhação
   }
@@ -69,6 +74,4 @@ export class MainComponent implements OnInit {
   isHintCommon(guessedValue: string, correctValue: string): boolean {
     return guessedValue?.toLowerCase() === correctValue?.toLowerCase();
   }
-  
-  
 }
