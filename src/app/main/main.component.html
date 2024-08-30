@@ -33,23 +33,9 @@
           </div>
 
           <div class="hint-box-container">
-            <label class="hint-title">Hair <br> Color:</label>
-            <div class="hint-box border rounded p-2 me-2 mb-2" [ngClass]="{ 'common': isHintCommon(character.hairColor, currentChampion.hairColor), 'uncommon': !isHintCommon(character.hairColor, currentChampion.hairColor) }">
-              <p class="hint m-0">{{ character.hairColor }}</p>
-            </div>
-          </div>
-
-          <div class="hint-box-container">
-            <label class="hint-title">Status:</label>
-            <div class="hint-box border rounded p-2 me-2 mb-2" [ngClass]="{ 'common': isHintCommon(character.status, currentChampion.status), 'uncommon': !isHintCommon(character.status, currentChampion.status) }">
-              <p class="hint m-0">{{ character.status }}</p>
-            </div>
-          </div>
-
-          <div class="hint-box-container">
-            <label class="hint-title">Occupation:</label>
-            <div class="hint-box border rounded p-2 me-2 mb-2" [ngClass]="{ 'common': isHintCommon(character.occupation, currentChampion.occupation), 'uncommon': !isHintCommon(character.occupation, currentChampion.occupation) }">
-              <p class="hint m-0">{{ character.occupation }}</p>
+            <label class="hint-title">Hair:</label>
+            <div class="hint-box border rounded p-2 me-2 mb-2" [ngClass]="{ 'common': isHintCommon(character.hair, currentChampion.hair), 'uncommon': !isHintCommon(character.hair, currentChampion.hair) }">
+              <p class="hint m-0">{{ character.hair }}</p>
             </div>
           </div>
 
@@ -75,16 +61,9 @@
           </div>
 
           <div class="hint-box-container">
-            <label class="hint-title">Manga <br> Debut:</label>
-            <div class="hint-box border rounded p-2 me-2 mb-2" [ngClass]="{ 'common': isHintCommon(character.mangaDebut, currentChampion.mangaDebut), 'uncommon': !isHintCommon(character.mangaDebut, currentChampion.mangaDebut) }">
-              <p class="hint m-0">{{ character.mangaDebut }}</p>
-            </div>
-          </div>
-
-          <div class="hint-box-container">
-            <label class="hint-title">Anime <br> Debut:</label>
-            <div class="hint-box border rounded p-2 me-2 mb-2" [ngClass]="{ 'common': isHintCommon(character.animeDebut, currentChampion.animeDebut), 'uncommon': !isHintCommon(character.animeDebut, currentChampion.animeDebut) }">
-              <p class="hint m-0">{{ character.animeDebut }}</p>
+            <label class="hint-title">Arc <br> Debut:</label>
+            <div class="hint-box border rounded p-2 me-2 mb-2" [ngClass]="{ 'common': isHintCommon(character.arcDebut, currentChampion.arcDebut), 'uncommon': !isHintCommon(character.arcDebut, currentChampion.arcDebut) }">
+              <p class="hint m-0">{{ character.arcDebut }}</p>
             </div>
           </div>
           <!-- Continue with other hint boxes as before -->
