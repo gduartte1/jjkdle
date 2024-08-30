@@ -4,64 +4,56 @@
     <input [(ngModel)]="guess" (input)="updateSearchResults()" placeholder="Guess the character" class="form-control">
     <div *ngIf="searchResults.length > 0" class="search-results list-group">
       <button *ngFor="let result of searchResults" (click)="selectCharacter(result.name); checkGuess()" class="list-group-item list-group-item-action">
-        <img [src]="result.photo" alt="{{ result.name }}" style="width: 50px; height: auto; margin-right: 10px;border: 5px solid #a20d10; border-radius: 10px;">
+        <img [src]="result.photo" alt="{{ result.name }}" class="characterImage">
         {{ result.name }}
       </button>
     </div>
     <button (click)="checkGuess()" class="btn btn-primary mt-2">Guess</button>
   </div>
+  <label class="hint-title"><br>Arc <br> Debut</label>
   <div *ngIf="guessedChampion" class="guessed-characters mt-4">
     <div *ngFor="let character of guessedCharacters" class="character-box border p-3 rounded mb-3">
       <div class="character-info d-flex align-items-center">
-        <div class="character-name bg-light border rounded p-2 me-2">
-          <img [src]="character.photo" alt="{{ character.name }}" style="width: 100%; height: 100%;">
-        </div>
+          <img [src]="character.photo" alt="{{ character.name }}" class="characterImage">        
         <div class="hints-container d-flex flex-wrap">
           
           <div class="hint-box-container">
-            <label class="hint-title">Gender:</label>
             <div class="hint-box border rounded p-2 me-2 mb-2" [ngClass]="{ 'common': isHintCommon(character.gender, currentChampion.gender), 'uncommon': !isHintCommon(character.gender, currentChampion.gender) }">
               <p class="hint m-0">{{ character.gender }}</p>
             </div>
           </div>
 
           <div class="hint-box-container">
-            <label class="hint-title">Species:</label>
             <div class="hint-box border rounded p-2 me-2 mb-2" [ngClass]="{ 'common': isHintCommon(character.species, currentChampion.species), 'uncommon': !isHintCommon(character.species, currentChampion.species) }">
               <p class="hint m-0">{{ character.species }}</p>
             </div>
           </div>
 
           <div class="hint-box-container">
-            <label class="hint-title">Hair:</label>
             <div class="hint-box border rounded p-2 me-2 mb-2" [ngClass]="{ 'common': isHintCommon(character.hair, currentChampion.hair), 'uncommon': !isHintCommon(character.hair, currentChampion.hair) }">
               <p class="hint m-0">{{ character.hair }}</p>
             </div>
           </div>
 
           <div class="hint-box-container">
-            <label class="hint-title">Innate <Br> Techniques:</label>
             <div class="hint-box border rounded p-2 me-2 mb-2" [ngClass]="{ 'common': isHintCommon(character.innateTechniques, currentChampion.innateTechniques), 'uncommon': !isHintCommon(character.innateTechniques, currentChampion.innateTechniques) }">
               <p class="hint m-0">{{ character.innateTechniques }}</p>
             </div>
           </div>
 
           <div class="hint-box-container">
-            <label class="hint-title">Domain <Br> Expansion:</label>
             <div class="hint-box border rounded p-2 me-2 mb-2" [ngClass]="{ 'common': isHintCommon(character.domainExpansion, currentChampion.domainExpansion), 'uncommon': !isHintCommon(character.domainExpansion, currentChampion.domainExpansion) }">
               <p class="hint m-0">{{ character.domainExpansion }}</p>
             </div>
           </div>
 
           <div class="hint-box-container">
-            <label class="hint-title">Grade:</label>
             <div class="hint-box border rounded p-2 me-2 mb-2" [ngClass]="{ 'common': isHintCommon(character.grade, currentChampion.grade), 'uncommon': !isHintCommon(character.grade, currentChampion.grade) }">
               <p class="hint m-0">{{ character.grade }}</p>
             </div>
           </div>
 
           <div class="hint-box-container">
-            <label class="hint-title">Arc <br> Debut:</label>
             <div class="hint-box border rounded p-2 me-2 mb-2" [ngClass]="{ 'common': isHintCommon(character.arcDebut, currentChampion.arcDebut), 'uncommon': !isHintCommon(character.arcDebut, currentChampion.arcDebut) }">
               <p class="hint m-0">{{ character.arcDebut }}</p>
             </div>

@@ -334,7 +334,7 @@ export class ChampionService {
 },
 {
       name:'Mai Zenin',
-      gender:'Male',
+      gender:'Female',
       species:'Human',
       hair:'Dark Green',
       statusTip:'Deceased',
