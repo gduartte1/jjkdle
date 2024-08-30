@@ -8,9 +8,21 @@
         {{ result.name }}
       </button>
     </div>
-    <button (click)="checkGuess()" class="btn btn-primary mt-2">Guess</button>
+    <button (click)="checkGuess()" class="btn btn-primary mt-2">GUESS</button>
   </div>
-  <label class="hint-title"><br>Arc <br> Debut</label>
+<div class="game-header">
+
+<div class="characteristics-header">
+  <div class="hint-box-header">
+    <div class="hint-box-container" *ngFor="let characteristic of characteristicnames">
+      <div class="hint-box">
+        <p class="hint m-0" [innerHTML]="characteristic" ></p>
+        </div>
+        <hr class="header-line">
+      </div>
+    </div>
+  </div>
+
   <div *ngIf="guessedChampion" class="guessed-characters mt-4">
     <div *ngFor="let character of guessedCharacters" class="character-box border p-3 rounded mb-3">
       <div class="character-info d-flex align-items-center">
@@ -56,9 +68,9 @@
           <div class="hint-box-container">
             <div class="hint-box border rounded p-2 me-2 mb-2" [ngClass]="{ 'common': isHintCommon(character.arcDebut, currentChampion.arcDebut), 'uncommon': !isHintCommon(character.arcDebut, currentChampion.arcDebut) }">
               <p class="hint m-0">{{ character.arcDebut }}</p>
+             </div>
             </div>
-          </div>
-          <!-- Continue with other hint boxes as before -->
+          </div> 
         </div>
       </div>
     </div>

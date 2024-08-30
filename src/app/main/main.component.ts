@@ -74,4 +74,7 @@ export class MainComponent implements OnInit {
   isHintCommon(guessedValue: string, correctValue: string): boolean {
     return guessedValue?.toLowerCase() === correctValue?.toLowerCase();
   }
+
+  characteristicnames: string[] = [  'Character', 'Gender',  'Species',  'Hair',  'Innate <br> Techniques',  'Domain <br> Expansion',  'Grade',  'Arc <br> Debut'];
+
 }
