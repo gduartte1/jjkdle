@@ -5,8 +5,8 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class ChampionService {
-  private champions = [
+export class CharactersService {
+  private characters = [
 {
       name:'Itadori Yuuji',
       gender:'Male',
@@ -545,11 +545,11 @@ export class ChampionService {
 
   constructor() { }
 
-  getChampions() {
-    return this.champions;
+  getCharacters() {
+    return this.characters;
   }
 
-  getChampion(name: string) {
-    return this.champions.find(champion => champion.name.toLowerCase() === name.toLowerCase());
+  getCharacter(name: string) {
+    return this.characters.find(champion => champion.name.toLowerCase() === name.toLowerCase());
   }
 }

@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ChampionService } from './champion.service';
+import { ChampionService } from './characters.service';
 
 describe('ChampionService', () => {
   let service: ChampionService;
