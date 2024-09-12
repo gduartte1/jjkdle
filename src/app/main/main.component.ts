@@ -76,6 +76,8 @@ export class MainComponent implements OnInit {
     return guessedValue?.toLowerCase() === correctValue?.toLowerCase();
   }
 
+  characteristicNames_: string[] = ['gender',  'species',  'hair',  'innateTechniques',  'domainExpansion',  'grade',  'arcDebut'];
+
   characteristicNames: string[] = [  'Character', 'Gender',  'Species',  'Hair',  'Innate <br> Techniques',  'Domain <br> Expansion',  'Grade',  'Arc <br> Debut'];
 
 }
