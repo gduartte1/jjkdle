@@ -20,6 +20,7 @@ export class MainComponent implements OnInit {
   constructor(private charactersService: CharactersService) { }
 
   ngOnInit(): void {
+    this.loadGuessedCharacters();
     this.checkDailyCharacter();
     this.loadvalidCharacters();
     this.startCountdown();
@@ -39,6 +40,8 @@ export class MainComponent implements OnInit {
       // Verifica se o dia atual é diferente do dia do último personagem gerado
       if (now.getDate() !== lastGenerated.getDate() || now.getTime() <= targetTime.getTime()) {
         this.loadRandomCharacter();
+        localStorage.removeItem('guessedCharacters');
+        this.guessedCharacters = [];
       } else {
         // Carrega o personagem atual salvo
         const savedChampion = localStorage.getItem('currentChampion');
@@ -138,6 +141,7 @@ export class MainComponent implements OnInit {
     // Verifica se o personagem já foi adivinhado antes de adicionar à lista
     if (!this.guessedCharacters.some(character => character.name === this.guessedCharacter.name)) {
       this.guessedCharacters.push(this.guessedCharacter);
+      localStorage.setItem('guessedCharacters', JSON.stringify(this.guessedCharacters));
     }
     if (this.guess.toLowerCase() === this.guessedCharacter.name.toLowerCase()) {
       this.message = 'You guessed it!';
@@ -149,6 +153,15 @@ export class MainComponent implements OnInit {
 
   isHintCommon(guessedValue: string, correctValue: string): boolean {
     return guessedValue?.toLowerCase() === correctValue?.toLowerCase();
+  }
+
+  loadGuessedCharacters() {
+    const storedGuessedCharacters = localStorage.getItem('guessedCharacters');
+  if (storedGuessedCharacters) {
+    this.guessedCharacters = JSON.parse(storedGuessedCharacters);
+  } else {
+    this.guessedCharacters = [];
+  }
   }
 
   characteristicNames_: string[] = ['gender',  'species',  'hair',  'innateTechniques',  'domainExpansion',  'grade',  'arcDebut'];

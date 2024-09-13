@@ -23,7 +23,7 @@
     </div>
   </div>
 
-  <div *ngIf="guessedCharacter" class="guessed-characters mt-4">
+  <div *ngIf="guessedCharacters.length > 0" class="guessed-characters mt-4">
     <div *ngFor="let character of guessedCharacters" class="character-box border p-3 rounded mb-3">
       <div class="character-info d-flex align-items-center">
           <img [src]="character.photo" alt="{{ character.name }}" class="characterImage">        
