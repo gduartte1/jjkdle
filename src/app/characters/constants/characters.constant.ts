@@ -24,7 +24,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Unknow',
         mangaDebutTip:'1',
         arcDebut:'Prologue',
-        photo: '../assets/images/itadori.png',
+        photo: 'assets/images/itadori.png',
   },
   {
         name:'Satoru Gojo',
@@ -37,7 +37,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Special',
         mangaDebutTip:'1',
         arcDebut:'Prologue',
-        photo: '../assets/images/satoru.png',
+        photo: 'assets/images/satoru.png',
   },
   {
         name:'Ryomen Sukuna',
@@ -50,7 +50,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Special',
         mangaDebutTip:'1',
         arcDebut:'Prologue',
-        photo: '../assets/images/sukuna.png',
+        photo: 'assets/images/sukuna.png',
   },
   {
         name:'Megumi Fushiguro',
@@ -63,7 +63,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'2',
         mangaDebutTip:'1',
         arcDebut:'Prologue',
-        photo: '../assets/images/megumi.png',
+        photo: 'assets/images/megumi.png',
   },
   {
         name:'Yuta Okkotsu',
@@ -76,7 +76,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Special',
         mangaDebutTip:'137',
         arcDebut:'Itadori Extermination Arc',
-        photo: '../assets/images/yuta.png',
+        photo: 'assets/images/yuta.png',
   },
   {
         name:'Nobara Kugisaki',
@@ -89,7 +89,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'3',
         mangaDebutTip:'3',
         arcDebut:'Fearsome Womb Arc',
-        photo: '../assets/images/nobara.png',
+        photo: 'assets/images/nobara.png',
   },
   {
         name:'Masamichi Yaga',
@@ -102,7 +102,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'1',
         mangaDebutTip:'3',
         arcDebut:'Fearsome Womb Arc',
-        photo: '../assets/images/masamichi.png',
+        photo: 'assets/images/masamichi.png',
   },
   {
         name:'Atsuya Kusakabe',
@@ -115,7 +115,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'1',
         mangaDebutTip:'83',
         arcDebut:'Itadori Extermination Arc',
-        photo: '../assets/images/atsuya.png',
+        photo: 'assets/images/atsuya.png',
   },
   {
         name:'Kiyotaka Ijichi',
@@ -128,7 +128,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Unknow',
         mangaDebutTip:'2',
         arcDebut:'Fearsome Womb Arc',
-        photo: '../assets/images/kiyotaka.png',
+        photo: 'assets/images/kiyotaka.png',
   },
   {
         name:'Shoko Ieiri',
@@ -141,7 +141,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Unknow',
         mangaDebutTip:'10',
         arcDebut:'Fearsome Womb Arc',
-        photo: '../assets/images/shoko.png',
+        photo: 'assets/images/shoko.png',
   },
   {
         name:'Akari Nitta',
@@ -154,7 +154,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Unknow',
         mangaDebutTip:'55',
         arcDebut:'Death Painting Arc',
-        photo: '../assets/images/akari.png',
+        photo: 'assets/images/akari.png',
   },
   {
         name:'Maki Zenin',
@@ -167,7 +167,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'4',
         mangaDebutTip:'10',
         arcDebut:'Fearsome Womb Arc',
-        photo: '../assets/images/maki.png',
+        photo: 'assets/images/maki.png',
   },
   {
         name:'Toge Inumaki',
@@ -180,7 +180,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Semi 1',
         mangaDebutTip:'1',
         arcDebut:'Prologue',
-        photo: '../assets/images/toge.png',
+        photo: 'assets/images/toge.png',
   },
   {
         name:'Panda',
@@ -193,7 +193,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Semi 2',
         mangaDebutTip:'1',
         arcDebut:'Prologue',
-        photo: '../assets/images/panda.png',
+        photo: 'assets/images/panda.png',
   },
   {
         name:'Kinji Hakari',
@@ -206,7 +206,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Unknow',
         mangaDebutTip:'153',
         arcDebut:'Perfect Preparation Arc',
-        photo: '../assets/images/kinji.png',
+        photo: 'assets/images/kinji.png',
   },
   {
         name:'Kirara Hoshi',
@@ -219,7 +219,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Unknow',
         mangaDebutTip:'153',
         arcDebut:'Perfect Preparation Arc',
-        photo: '../assets/images/kirara.png',
+        photo: 'assets/images/kirara.png',
   },
   {
         name:'Mahito',
@@ -232,7 +232,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Special',
         mangaDebutTip:'16',
         arcDebut:'Fearsome Womb Arc',
-        photo: '../assets/images/mahito.png',
+        photo: 'assets/images/mahito.png',
   },
   {
         name:'Jogo',
@@ -245,7 +245,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Special',
         mangaDebutTip:'10',
         arcDebut:'Fearsome Womb Arc',
-        photo: '../assets/images/jogo.png',
+        photo: 'assets/images/jogo.png',
   },
   {
         name:'Hanami',
@@ -258,7 +258,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Special',
         mangaDebutTip:'10',
         arcDebut:'Fearsome Womb Arc',
-        photo: '../assets/images/hanami.png',
+        photo: 'assets/images/hanami.png',
   },
   {
         name:'Dagon',
@@ -271,7 +271,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Special',
         mangaDebutTip:'10',
         arcDebut:'Fearsome Womb Arc',
-        photo: '../assets/images/dagon.png',
+        photo: 'assets/images/dagon.png',
   },
   {
         name:'Rika Orimoto',
@@ -284,7 +284,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Special',
         mangaDebutTip:'137',
         arcDebut:'Itadori Extermination Arc',
-        photo: '../assets/images/rika.png',
+        photo: 'assets/images/rika.png',
   },
   {
         name:'Yoshinobu Gakuganji',
@@ -297,7 +297,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Unknow',
         mangaDebutTip:'18',
         arcDebut:'Fearsome Womb Arc',
-        photo: '../assets/images/yoshinobu.png',
+        photo: 'assets/images/yoshinobu.png',
   },
   {
         name:'Utahime Iori',
@@ -310,7 +310,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Semi 1',
         mangaDebutTip:'32',
         arcDebut:'Kyoto Goodwill Event Arc',
-        photo: '../assets/images/utahime.png',
+        photo: 'assets/images/utahime.png',
   },
   {
         name:'Kasumi Miwa',
@@ -323,7 +323,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Unknow',
         mangaDebutTip:'18',
         arcDebut:'Fearsome Womb Arc',
-        photo: '../assets/images/miwa.png',
+        photo: 'assets/images/miwa.png',
   },
   {
         name:'Kokichi Muta (Mechamaru)',
@@ -336,7 +336,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Semi 1',
         mangaDebutTip:'32',
         arcDebut:'Kyoto Goodwill Event Arc',
-        photo: '../assets/images/mechamaru.png',
+        photo: 'assets/images/mechamaru.png',
   },
   {
         name:'Mai Zenin',
@@ -349,7 +349,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'3',
         mangaDebutTip:'16',
         arcDebut:'Fearsome Womb Arc',
-        photo: '../assets/images/mai.png',
+        photo: 'assets/images/mai.png',
   },
   {
         name:'Noritoshi Kamo',
@@ -362,7 +362,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Semi 1',
         mangaDebutTip:'32',
         arcDebut:'Kyoto Goodwill Event Arc',
-        photo: '../assets/images/noritoshi.png',
+        photo: 'assets/images/noritoshi.png',
   },
   {
         name:'Aoi Todo',
@@ -375,7 +375,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'1',
         mangaDebutTip:'16',
         arcDebut:'Fearsome Womb Arc',
-        photo: '../assets/images/todo.png',
+        photo: 'assets/images/todo.png',
   },
   {
         name:'Momo Nishimiya',
@@ -388,7 +388,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Unknow',
         mangaDebutTip:'32',
         arcDebut:'Kyoto Goodwill Event Arc',
-        photo: '../assets/images/momo.png',
+        photo: 'assets/images/momo.png',
   },
   {
         name:'Kento Nanami',
@@ -401,7 +401,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'1',
         mangaDebutTip:'18',
         arcDebut:'Fearsome Womb Arc',
-        photo: '../assets/images/nanami.png',
+        photo: 'assets/images/nanami.png',
   },
   {
         name:'Takuma Ino',
@@ -414,7 +414,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'2',
         mangaDebutTip:'26',
         arcDebut:'Vs. Mahito Arc',
-        photo: '../assets/images/ino.png',
+        photo: 'assets/images/ino.png',
   },
   {
         name:'Mei Mei',
@@ -427,7 +427,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'1',
         mangaDebutTip:'40',
         arcDebut:'Kyoto Goodwill Event Arc',
-        photo: '../assets/images/meimei.png',
+        photo: 'assets/images/meimei.png',
   },
   {
         name:'Yuki Tsukumo',
@@ -440,7 +440,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Special',
         mangaDebutTip:'50',
         arcDebut:'Kyoto Goodwill Event Arc',
-        photo: '../assets/images/yuki.png',
+        photo: 'assets/images/yuki.png',
   },
   {
         name:'Tengen',
@@ -453,7 +453,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Unknow',
         mangaDebutTip:'144',
         arcDebut:'Perfect Preparation Arc',
-        photo: '../assets/images/tengen.png',
+        photo: 'assets/images/tengen.png',
   },
   {
         name:'Naobito Zenin',
@@ -466,7 +466,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Special 1',
         mangaDebutTip:'42',
         arcDebut:'Kyoto Goodwill Event Arc',
-        photo: '../assets/images/naobito.png',
+        photo: 'assets/images/naobito.png',
   },
   {
         name:'Naoya Zenin',
@@ -479,7 +479,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Special 1',
         mangaDebutTip:'138',
         arcDebut:'Itadori Extermination Arc',
-        photo: '../assets/images/naoya.png',
+        photo: 'assets/images/naoya.png',
   },
   {
         name:'Ogi Zenin',
@@ -492,7 +492,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Special 1',
         mangaDebutTip:'138',
         arcDebut:'Itadori Extermination Arc',
-        photo: '../assets/images/ogi.png',
+        photo: 'assets/images/ogi.png',
   },
   {
         name:'Hajime Kashimo',
@@ -505,7 +505,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Unknow',
         mangaDebutTip:'158',
         arcDebut:'Perfect Preparation Arc',
-        photo: '../assets/images/hajime.png',
+        photo: 'assets/images/hajime.png',
   },
   {
         name:'Hana Kurusu',
@@ -518,7 +518,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Unknow',
         mangaDebutTip:'145',
         arcDebut:'Perfect Preparation Arc',
-        photo: '../assets/images/hana.png',
+        photo: 'assets/images/hana.png',
   },
   {
         name:'Hiromi Higuruma',
@@ -531,7 +531,7 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Unknow',
         mangaDebutTip:'158',
         arcDebut:'Perfect Preparation Arc',
-        photo: '../assets/images/higuruma.png',
+        photo: 'assets/images/higuruma.png',
   },
   {
         name:'Fumihiko Takaba',
@@ -544,6 +544,6 @@ export const CHARACTERS_DATA: CharacterData[] = [
         grade:'Unknow',
         mangaDebutTip:'146',
         arcDebut:'Perfect Preparation Arc',
-        photo: '../assets/images/takaba.png',
+        photo: 'assets/images/takaba.png',
   }
 ];
