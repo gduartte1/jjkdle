@@ -73,12 +73,34 @@ export class MainComponent implements OnInit {
   }
 
   loadRandomCharacter() {
-    const character = this.charactersService.getCharacters();
-    this.currentCharacter = character[Math.floor(Math.random() * character.length)];
-    localStorage.setItem('currentChampion', JSON.stringify(this.currentCharacter));
+    const champions = this.charactersService.getCharacters();
+  
+    // Obtém a data atual (ano, mês, dia)
     const now = new Date();
-    localStorage.setItem('lastGeneratedDate', now.toISOString());
+    const daySeed = `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}`;
+  
+    // Converte a string da data em um hash numérico
+    const seed = this.hashString(daySeed);
+  
+    // Usa o hash como índice para selecionar o personagem
+    const index = seed % champions.length;
+    this.currentCharacter = champions[index];
+  
+    // Armazena o personagem atual localmente (para manter durante o dia)
+    localStorage.setItem('currentChampion', JSON.stringify(this.currentCharacter));
   }
+  
+  // Função para criar um hash numérico a partir de uma string
+  hashString(str: string): number {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+      hash = (hash << 5) - hash + str.charCodeAt(i);
+      hash = hash & hash; // Converte para um número de 32 bits
+    }
+    return Math.abs(hash); // Retorna sempre um número positivo
+  }
+
+  
 
   loadvalidCharacters() {
     this.validCharacters = this.charactersService.getCharacters().map(character => character.name.toLowerCase());
