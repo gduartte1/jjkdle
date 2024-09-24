@@ -26,6 +26,40 @@ export class MainComponent implements OnInit {
     this.startCountdown();
   }
   
+  loadCurrentChampion(): void {
+    const today = new Date();
+    const currentDate = today.toDateString(); // Usar a data como string única para o dia
+  
+    const lastPlayedDate = localStorage.getItem('lastPlayedDate');
+  
+    if (lastPlayedDate !== currentDate) {
+      // Novo dia, gera novo personagem
+      this.currentCharacter = this.checkDailyCharacter();
+  
+      // Atualiza a data no localStorage
+      localStorage.setItem('lastPlayedDate', currentDate);
+  
+      // Limpa os guessedCharacters do dia anterior SOMENTE quando um novo personagem for gerado
+      localStorage.removeItem('guessedCharacters');
+      this.guessedCharacters = []; // Limpa também a lista atual
+  
+      // Armazena o novo personagem do dia no localStorage
+      localStorage.setItem('currentChampion', JSON.stringify(this.currentCharacter));
+    } else {
+      // Carregar o personagem do dia anterior do localStorage (se disponível)
+      const storedChampion = localStorage.getItem('currentChampion');
+      if (storedChampion) {
+        this.currentCharacter = JSON.parse(storedChampion);
+      } else {
+        this.currentCharacter = this.checkDailyCharacter(); // Backup caso o storage falhe
+      }
+  
+      // Carregar os guessedCharacters do localStorage
+      this.loadGuessedCharacters();
+    }
+  }
+  
+  
 
   checkDailyCharacter() {
     const lastGeneratedDate = localStorage.getItem('lastGeneratedDate');
@@ -38,9 +72,10 @@ export class MainComponent implements OnInit {
       const lastGenerated = new Date(lastGeneratedDate);
       
       // Verifica se o dia atual é diferente do dia do último personagem gerado
-      if (now.getDate() !== lastGenerated.getDate() || now.getTime() <= targetTime.getTime()) {
+      if (now >= targetTime && (now.getDate() !== lastGenerated.getDate() || lastGenerated < targetTime)) {
         this.loadRandomCharacter();
-        localStorage.removeItem('guessedCharacters');
+        localStorage.setItem('lastGeneratedDate', now.toString()); // Atualiza a data de geração
+        localStorage.removeItem('guessedCharacters'); // Limpa os personagens chutados
         this.guessedCharacters = [];
       } else {
         // Carrega o personagem atual salvo
@@ -51,6 +86,7 @@ export class MainComponent implements OnInit {
       }
     } else {
       this.loadRandomCharacter(); // Gera o primeiro personagem se nunca foi gerado
+      localStorage.setItem('lastGeneratedDate', now.toString()); // Armazena a primeira data de geração
     }
   }
 
